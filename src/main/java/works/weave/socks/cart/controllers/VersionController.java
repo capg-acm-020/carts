@@ -10,7 +10,12 @@ public class VersionController {
 
    @Value("${version}")
    private String version;
-   
+      @Value("${backgroundcolor1}")
+   private String backgroundcolor1;
+   @Value("${backgroundcolor2}")
+   private String backgroundcolor2;
+   @Value("${welcomemessage}")
+   private String welcomemessage;
    private String template = "<table style=\"font-family:sans-serif;font-size:24\"><tr><td>Container image</td><td>%s</td></tr><tr><td>Kubernetes namespace</td><td>%s</td></tr><tr><td>Version</td><td>%s</td></tr></table>";
 
    @ResponseStatus(HttpStatus.OK)
@@ -36,7 +41,8 @@ public class VersionController {
    @ResponseStatus(HttpStatus.OK)
    @RequestMapping(method = RequestMethod.GET, path = "/version")
    public @ResponseBody String getVersion() {
-      return "Version = " + version;
+      //return "Version = " + version;
+      return "<html><head><center><font size=\"7\"><br /><br /><br />Welcome " + welcomemessage + "</font></center></head><body><center><font size=\"6\" style=\"background-color:" + backgroundcolor1 + "\"><br /><br /><br /><br />(Version </font>= <b><font size= \"6\" style=\"background-color:" + backgroundcolor2 + "\">" + version + ")</b></font></center></body></html>";
    }
 
 }
