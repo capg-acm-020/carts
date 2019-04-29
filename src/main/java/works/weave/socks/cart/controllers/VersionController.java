@@ -43,11 +43,11 @@ public class VersionController {
    public @ResponseBody String getVersion() {
       //return "Version = " + version;
       return "<html><head><center><font size=\"7\"><br /><br /><br />Welcome " + welcomemessage + "</font></center></head><body><center><font size=\"6\" style=\"background-color:" + backgroundcolor1 + "\"><br /><br /><br /><br />(Version </font>= <b><font size= \"6\" style=\"background-color:" + backgroundcolor2 + "\">" + version + ")</b></font></center><br /><br /><br /><br /><br /><br /><br /><br /><center><font size=\"4\" style=\"color:mediumblue\">Powered by Keptn !</font></center></body></html>";
-   return "<html><head><center><font size=\"7\"><br /><br /><br />Welcome \" 
+      return "<html><head><center><font size=\"7\"><br /><br /><br />Welcome " 
          + welcomemessage 
-         + "</font></center></head><body><center><font size=\"6\" style=\"background-color:\"
-         + backgroundcolor1 + "\"><br /><br /><br /><br />(Version </font>= <b><font size= \"6\" style=\"background-color:\" 
-         + backgroundcolor2 + "\">\" 
+         + "</font></center></head><body><center><font size=\"6\" style=\"background-color:\""
+         + backgroundcolor1 + "\"><br /><br /><br /><br />(Version </font>= <b><font size= \"6\" style=\"background-color:\" "
+         + backgroundcolor2 + "\">\" "
          + version + ")</b></font></center><br /><br /><br /><br /><br /><br /><br /><br /> "
                     + "<p align=\"right\" style=\"color:mediumblue\"><font size=\"6\">Powered by </font> "
                     + "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"10%\" heigth=\"10%\" x=\"0px\" y=\"0px\"    viewBox=\"0 0 139.8 44\" style=\"enable-background:new 0 0 139.8 44;\" xml:space=\"preserve\"> "
