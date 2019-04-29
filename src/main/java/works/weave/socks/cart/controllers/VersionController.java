@@ -42,7 +42,7 @@ public class VersionController {
    @RequestMapping(method = RequestMethod.GET, path = "/version")
    public @ResponseBody String getVersion() {
       //return "Version = " + version;
-      return "<html><head><center><font size=\"7\"><br /><br /><br />Welcome " + welcomemessage + "</font></center></head><body><center><font size=\"6\" style=\"background-color:" + backgroundcolor1 + "\"><br /><br /><br /><br />(Version </font>= <b><font size= \"6\" style=\"background-color:" + backgroundcolor2 + "\">" + version + ")</b></font></center><br /><br /><br /><br /><br /><br /><br /><br /><center><font size=\"5\" style=\"background-color:lightblue\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspPowered by Keptn !</font></center></body></html>";
+      return "<html><head><center><font size=\"7\"><br /><br /><br />Welcome " + welcomemessage + "</font></center></head><body><center><font size=\"6\" style=\"background-color:" + backgroundcolor1 + "\"><br /><br /><br /><br />(Version </font>= <b><font size= \"6\" style=\"background-color:" + backgroundcolor2 + "\">" + version + ")</b></font></center><br /><br /><br /><br /><br /><br /><br /><br /><center><font size=\"4\" style=\"color:mediumblue\">Powered by Keptn !</font></center></body></html>";
    }
 
 }
