@@ -17,7 +17,7 @@ public class VersionController {
    @Value("${welcomemessage}")
    private String welcomemessage;
    private String template = "<table style=\"font-family:sans-serif;font-size:24\"><tr><td>Container image</td><td>%s</td></tr><tr><td>Kubernetes namespace</td><td>%s</td></tr><tr><td>Version</td><td>%s</td></tr></table>";
-
+   
    @ResponseStatus(HttpStatus.OK)
    @RequestMapping(method = RequestMethod.GET, path = "/")
    public @ResponseBody String getInformation() {
@@ -43,7 +43,7 @@ public class VersionController {
    public @ResponseBody String getVersion() {
       //return "Version = " + version;
       //return "<html><head><center><font size=\"7\"><br /><br /><br />Welcome " + welcomemessage + "</font></center></head><body><center><font size=\"6\" style=\"background-color:" + backgroundcolor1 + "\"><br /><br /><br /><br />(Version </font>= <b><font size= \"6\" style=\"background-color:" + backgroundcolor2 + "\">" + version + ")</b></font></center><br /><br /><br /><br /><br /><br /><br /><br /><center><font size=\"4\" style=\"color:mediumblue\">Powered by Keptn !</font></center></body></html>";
-     private string env="<html><head><center><font size=\"7\"><br /><br /><br />Welcome \" + welcomemessage + \"</font></center></head><body><center><font size=\"6\" style=\"background-color:\" + backgroundcolor1 + \"\"><br /><br /><br /><br />(Version </font>= <b><font size= \"6\" style=\"background-color:\" + backgroundcolor2 + \"\">\" + version + \")</b></font></center><br /><br /><br /><br /><br /><br /><br /><br /> "
+   private String env="<html><head><center><font size=\"7\"><br /><br /><br />Welcome \" + welcomemessage + \"</font></center></head><body><center><font size=\"6\" style=\"background-color:\" + backgroundcolor1 + \"\"><br /><br /><br /><br />(Version </font>= <b><font size= \"6\" style=\"background-color:\" + backgroundcolor2 + \"\">\" + version + \")</b></font></center><br /><br /><br /><br /><br /><br /><br /><br /> "
                     + "<p align=\"right\" style=\"color:mediumblue\"><font size=\"6\">Powered by </font> "
                     + "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"10%\" heigth=\"10%\" x=\"0px\" y=\"0px\"    viewBox=\"0 0 139.8 44\" style=\"enable-background:new 0 0 139.8 44;\" xml:space=\"preserve\"> "
                     + "<style type=\"text/css\"> "
@@ -93,7 +93,7 @@ public class VersionController {
                 + "</svg>"
                 + "</p>"
                 + "</body></html> ";
-    
+     
       return env;
    }
 
